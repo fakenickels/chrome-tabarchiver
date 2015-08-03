@@ -1,15 +1,3 @@
-// var Categories = new PouchDB('categories');
-
-// Categories.insert = function(doc){
-// 	doc._id = new Date().toISOString();
-
-// 	return Categories.put(doc);
-// }
-
-// Categories.insertTabToCat = function(cat, tab){
-
-// }
-
 function resetStorage(){
 	chrome.storage.sync.set({categories: {}}, function(){
 		console.log('storage reseted.')
