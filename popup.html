@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TabArchiver</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 100%;
+			width: 400px;
+		}
+
+		#archive-list li {
+			cursor: pointer;
+		}
+
+		#archive-list li:hover {
+			text-decoration: underline;
+		}
+	</style>
+
+	<script type="text/javascript" src="pouchdb-3.6.0.min.js"></script>
+	<script type="text/javascript" src="underscore-min.js"></script>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+	<a href="#" id="agroup-btn">Agrupar tabs atuais</a>
+
+	<div>
+		<p>Clique em um item para abrir tudo salvo na categoria.</p>
+
+		<ul id="archive-list">
+		</ul>
+	</div>
+</body>
+</html>
